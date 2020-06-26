@@ -1,0 +1,82 @@
+buildscript {
+    ext {
+        serenity_version = '2.1.5'
+        serenity_cucumber4_version = '2.1.2'
+        cucumber_version = '4.8.0'
+    }
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "net.serenity-bdd:serenity-gradle-plugin:$serenity_version"
+    }
+}
+
+plugins {
+    id "java"
+    id "idea"
+}
+
+apply plugin: "net.serenity-bdd.aggregator"
+
+repositories.addAll(buildscript.repositories)
+
+description = 'Gradle solution for Serenity-Cucumber4 forking mechanizm'
+group 'com.auspost'
+version = '1.0-SNAPSHOT'
+
+idea.module {
+    downloadJavadoc = true
+    downloadSources = true
+}
+
+configurations.all {
+    resolutionStrategy {
+        failOnVersionConflict()
+        preferProjectModules()
+        force "io.cucumber:cucumber-core:$cucumber_version", "io.cucumber:cucumber-java:$cucumber_version", "io.cucumber:cucumber-junit:$cucumber_version"
+    }
+}
+
+dependencies {
+    testCompile group: 'io.rest-assured', name: 'rest-assured', version: '3.0.0'
+    testCompile('org.assertj:assertj-core:1.7.0')
+    compile "net.serenity-bdd:serenity-core:$serenity_version"
+    compile "net.serenity-bdd:serenity-cucumber4:$serenity_cucumber4_version"
+    compile "io.cucumber:cucumber-core:$cucumber_version"
+    compile "io.cucumber:cucumber-junit:$cucumber_version"
+
+    compile "org.apache.logging.log4j:log4j-slf4j-impl:2.11.1"
+    compile "org.apache.logging.log4j:log4j-core:2.11.1"
+    compile group: 'net.serenity-bdd', name: 'serenity-zalenium', version: '2.0.80'
+    compile group: 'com.codoid.products', name: 'fillo', version: '1.21'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    compile group: 'org.json', name: 'json', version: '20190722'
+    compile group: 'com.jayway.jsonpath', name: 'json-path', version: '2.2.0'
+    compile group: 'com.hynnet', name: 'jacob', version: '1.18'
+}
+
+test {
+
+    systemProperty 'log4j.skipJansi', 'false' // fix log4j2 coloring output
+
+    // We need to have full list of runners to prevent case when count of cucumber forks > count of runners.
+    // As result there, runners = ['FeatureSlicedRunner1', 'FeatureSlicedRunner2', 'FeatureSlicedRunner3']
+    List<String> runners = file('src/test/java/com/auspost/runners').listFiles()
+            .collect { it.name }
+            .findAll { it =~ 'ShakeoutRunner' }
+            .collect { it.take(it.lastIndexOf('.')) } // trim '.java' to use file names in gradle test filter
+
+    maxParallelForks = System.properties.'serenity.fork.count' as Integer ?: 1
+    maxParallelForks = [maxParallelForks, runners.size()].max() // set correct maximum number of forks, if value in 'serenity.fork.count' was too big
+    systemProperty 'serenity.fork.count', maxParallelForks // correct that property as well
+    maxParallelForks.times { filter.includeTestsMatching runners[it] }
+
+    ignoreFailures = true
+    testLogging.showStandardStreams = true
+    testLogging.exceptionFormat = 'full'
+}
+
+gradle.startParameter.continueOnFailure = true
