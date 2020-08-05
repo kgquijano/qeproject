@@ -11,12 +11,13 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import static net.thucydides.core.ThucydidesSystemProperty.WEBDRIVER_CHROME_BINARY;
+
 public class CustomWebDriverFactory implements DriverSource {
     EnvironmentVariables variables = SystemEnvironmentVariables.createEnvironmentVariables();
     @Override
     public WebDriver newDriver() {
         try {
-
             return new RemoteWebDriver(
                     new URL("http://" + variables.getProperty("HostMachine") + ":4444/wd/hub"),
                     new FirefoxDriverCapabilities(Injectors.getInjector().getProvider(EnvironmentVariables.class).get()).getCapabilities());

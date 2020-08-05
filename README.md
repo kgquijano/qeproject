@@ -1,3 +1,3 @@
-# AusPost_JavaTestAutomation_SerinityBDD
+AusPost-JavaTestAutomation with BDD
 
-Base Serenity java framework with BDD
+Base java serinity framework with BDD, with web app and message tech stack support

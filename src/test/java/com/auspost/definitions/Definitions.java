@@ -3,6 +3,7 @@ package com.auspost.definitions;
 import com.auspost.pages.FirstSuite;
 import com.auspost.pages.SecondSuite;
 import com.auspost.steps.APISteps;
+import com.auspost.steps.ElectronSteps;
 import com.auspost.steps.RevITSteps;
 import com.auspost.steps.SheldeSteps;
 import cucumber.api.java.Before;
@@ -28,6 +29,9 @@ public class Definitions {
 
     @Steps
     APISteps apiSteps;
+
+    @Steps
+    ElectronSteps electronSteps;
 
     @Before
     public void before() {
@@ -121,5 +125,22 @@ public class Definitions {
     @io.cucumber.java.en.Given("Validate the {string} request by changing the Product {string} for the Object {string}")
     public void validateTheRequestByChangingTheProductForTheObject(String arg0, String arg1, String arg2) throws Exception {
         apiSteps.authorizeRequest(arg2,arg1,arg0,"");
+    }
+
+    @And("Login with valid credentials")
+    public void loginWithValidCredentials() {
+
+        electronSteps.login();
+        
+    }
+
+    @io.cucumber.java.en.Given("Launch post plus")
+    public void launchPostPlus() throws Exception {
+        electronSteps.launchPostPlusElectronApp();
+    }
+
+    @And("Verify the Welcome Page")
+    public void verifyTheWelcomePage() {
+        electronSteps.verifyHomePage();
     }
 }
