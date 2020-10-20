@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Kay tests" skipped="0" tests="3" time="35.97" timestamp="2020-10-20 09:20:34"><testcase name="To verify DuckDuckGo"/><testcase name="Validate the XML Request for swapi people 3"/><testcase name="Validate the JSON Request for swapi planets 2"/></testsuite>

@@ -1,5 +1,6 @@
 package com.auspost.messageObjects;
 
+import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 import net.thucydides.core.util.EnvironmentVariables;
 import net.thucydides.core.util.SystemEnvironmentVariables;
@@ -11,6 +12,7 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -21,20 +23,28 @@ public class MessageFactory extends MessageConstruct {
     public static RequestSpecification httpRequest;
     String response = null;
     EnvironmentVariables variables = SystemEnvironmentVariables.createEnvironmentVariables();
+    String swCriteria;
+    String swValue;
 
 
-    public void authorizeRequest(String searchString,String modifyValue,String templateType,String templateIdValue) throws Exception {
+    //Given - API request is valid
+    public void authorizeRequest(String searchString,String modifyValue,String templateType) throws Exception {
+
+        swCriteria = modifyValue;
+        swValue = searchString;
 
         switch (templateType) {
             case "JSON":
                 httpRequest = given().auth().none().headers(headerKey, headerValue, "Content-Type", "application/json")
-                        .body(getBody(searchString,modifyValue,templateType,templateIdValue));
+                        .body(getBody(searchString,modifyValue,templateType));
                 httpRequest = given().auth().basic(variables.getProperty("HOST_USERNAME"), variables.getProperty("HOST_PASSWORD"))
-                        .headers(headerKey, headerValue, "Content-Type", "application/json").body(getBody(searchString,modifyValue,templateType,templateIdValue));
+                        .headers(headerKey, headerValue, "Content-Type", "application/json").body(getBody(searchString,modifyValue,templateType));
                 break;
             case "XML":
-                httpRequest = given().auth().none().header("Content-Type", "application/xml").body(getBody(searchString,modifyValue,templateType,templateIdValue));
-               // httpRequest = given().auth().basic(variables.getProperty("HOST_USERNAME"), variables.getProperty("HOST_PASSWORD")).header("Content-Type", "application/xml").body(getBody(searchString,modifyValue,templateType,templateIdValue));
+                //httpRequest = given().auth().none().header("Content-Type", "application/xml").body(getBody(searchString,modifyValue,templateType));
+                httpRequest = given().auth().none().header("Content-Type", "application/xml");
+                // httpRequest = given().auth().basic(variables.getProperty("HOST_USERNAME"), variables.getProperty("HOST_PASSWORD")).header("Content-Type", "application/xml").body(getBody(searchString,modifyValue,templateType));
+                System.out.println("kay " + httpRequest);
                 break;
         }
 
@@ -42,7 +52,7 @@ public class MessageFactory extends MessageConstruct {
 
     }
 
-    public String getBody(String searchString,String modifyValue, String templateType,String templateIdValue) throws Exception {
+    public String getBody(String searchString,String modifyValue, String templateType) throws Exception {
         String body = null;
         String template;
 
@@ -55,7 +65,7 @@ public class MessageFactory extends MessageConstruct {
                 break;
             case "XML":
                 //Get the Template data
-                template = getTemplateData("Type",templateType,"TemplateId",templateIdValue,"Template");
+                template = getTemplateData("Type",templateType,"Template");
 
                 //Convert the XML template(String) to XML Doc Object
                 Document doc = convertStringToXML(template);
@@ -71,21 +81,35 @@ public class MessageFactory extends MessageConstruct {
 
     }
 
-    public void submitSOAPRequest(String searchString,String modifyValue,String templateType,String templateIdValue) throws Exception {
-        response = String.valueOf(getSOAPResponse(variables.getProperty("HOST_URI"),getBody(searchString,modifyValue,templateType,templateIdValue)));
+    public void submitSOAPRequest(String searchString,String modifyValue,String templateType) throws Exception {
+        response = String.valueOf(getSOAPResponse(variables.getProperty("HOST_URI"),getBody(searchString,modifyValue,templateType)));
     }
 
+    //And - submitting API request
     public void submitRequest(String templateType) throws Exception {
         String statusCode = null;
 
         if(templateType.contains("PublicAPI")){
-            response = String.valueOf(httpRequest.when().post(variables.getProperty("publicHostURI")).thenReturn().getStatusCode());
+
+            //concatenate the URL and the values in the gherkin
+            String swURL = variables.getProperty("publicHostURI") + swCriteria + "/" + swValue;
+
+
+            //prints the body of the API
+            System.out.println("check2 " + swURL);
+            ResponseBody swBody = (httpRequest.when().get(swURL).getBody());
+            System.out.println("check3 " + swBody.asString());
+
+            //gets the status code
+            response = String.valueOf(httpRequest.when().get(swURL).thenReturn().getStatusCode());
+
         }else {
             String uriConstruct = getTemplateData("Type",templateType,"URIConstruct");
             response = String.valueOf(httpRequest.when().post(variables.getProperty("HOST_URI") + uriConstruct).thenReturn().getStatusCode());
         }
     }
 
+    //then - validates the status code from the response variable
     public void validateResponse(String statusCode){
         assertThat(response).contains(statusCode);
     }

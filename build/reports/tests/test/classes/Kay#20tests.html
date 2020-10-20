@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Kay tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Kay tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Kay tests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">35.998s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">To verify DuckDuckGo</td>
+<td class="success">13.534s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Validate the JSON Request for swapi planets 2</td>
+<td class="success">10.650s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Validate the XML Request for swapi people 3</td>
+<td class="success">11.814s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[1;34m[INFO][2020-10-20 21:20:34] 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: To verify DuckDuckGo
+-------------------------------------------------------------------(kay-tests;to-verify-duckduckgo)
+?[m?[1;34m[INFO][2020-10-20 21:20:36] adding tag to test fork:fork 2 scenario
+?[m?[1;34m[INFO][2020-10-20 21:20:37] Instantiating driver
+?[m?[1;34m[INFO][2020-10-20 21:20:37] Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+?[m?[1;34m[INFO][2020-10-20 21:20:49] 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Validate the XML Request for swapi people 3
+-------------------------------------------------------------------(kay-tests;validate-the-xml-request-for-swapi-people-3)
+?[m?[1;34m[INFO][2020-10-20 21:20:50] adding tag to test fork:fork 2 scenario
+?[mkay io.restassured.internal.RequestSpecificationImpl@146e8a96
+check2 http://swapi.dev/api/people/3
+?[1m[DEBUG][2020-10-20 21:20:52] Get connection for route {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:20:52] Connecting to swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:20:52] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:20:52] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:20:52] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:52] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:52] Attempt 1 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:20:52] Sending request: GET /api/people/3 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &gt;&gt; &quot;GET /api/people/3 HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &gt;&gt; &quot;Content-Type: application/xml; charset=ISO-8859-1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &gt;&gt; &quot;Content-Length: 0[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &gt;&gt; GET /api/people/3 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &gt;&gt; Content-Type: application/xml; charset=ISO-8859-1
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &gt;&gt; Content-Length: 0
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &lt;&lt; &quot;HTTP/1.1 301 Moved Permanently[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:20:52 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &lt;&lt; &quot;Content-Type: text/html[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &lt;&lt; &quot;Content-Length: 169[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &lt;&lt; &quot;Location: https://swapi.dev/api/people/3[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:52] Receiving response: HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &lt;&lt; HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &lt;&lt; Date: Tue, 20 Oct 2020 10:20:52 GMT
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &lt;&lt; Content-Type: text/html
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &lt;&lt; Content-Length: 169
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:20:52] &lt;&lt; Location: https://swapi.dev/api/people/3
+?[m?[1m[DEBUG][2020-10-20 21:20:53] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:53] Redirect requested to location 'https://swapi.dev/api/people/3'
+?[m?[1m[DEBUG][2020-10-20 21:20:53] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:20:53] Redirecting to 'https://swapi.dev/api/people/3' via {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:20:53]  &lt;&lt; &quot;&lt;html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:53]  &lt;&lt; &quot;&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:53]  &lt;&lt; &quot;&lt;body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:53]  &lt;&lt; &quot;&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:53]  &lt;&lt; &quot;&lt;hr&gt;&lt;center&gt;nginx/1.16.1&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:53]  &lt;&lt; &quot;&lt;/body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:53]  &lt;&lt; &quot;&lt;/html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:53] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@51ccbe61
+?[m?[1m[DEBUG][2020-10-20 21:20:53] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:53] Get connection for route {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:20:53] Connection 0.0.0.0:62386&lt;-&gt;18.197.142.196:80 closed
+?[m?[1m[DEBUG][2020-10-20 21:20:53] Connecting to swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:20:54] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Attempt 2 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Sending request: GET /api/people/3 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &gt;&gt; &quot;GET /api/people/3 HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &gt;&gt; &quot;Content-Type: application/xml; charset=ISO-8859-1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &gt;&gt; GET /api/people/3 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &gt;&gt; Content-Type: application/xml; charset=ISO-8859-1
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;HTTP/1.1 301 MOVED PERMANENTLY[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:20:54 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;Content-Type: text/html; charset=utf-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;X-Frame-Options: SAMEORIGIN[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;ETag: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;Location: http://swapi.dev/api/people/3/[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;Strict-Transport-Security: max-age=15768000[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Receiving response: HTTP/1.1 301 MOVED PERMANENTLY
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &lt;&lt; HTTP/1.1 301 MOVED PERMANENTLY
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &lt;&lt; Date: Tue, 20 Oct 2020 10:20:54 GMT
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &lt;&lt; Content-Type: text/html; charset=utf-8
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &lt;&lt; Transfer-Encoding: chunked
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &lt;&lt; X-Frame-Options: SAMEORIGIN
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &lt;&lt; ETag: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &lt;&lt; Location: http://swapi.dev/api/people/3/
+?[m?[1m[DEBUG][2020-10-20 21:20:54] &lt;&lt; Strict-Transport-Security: max-age=15768000
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Redirect requested to location 'http://swapi.dev/api/people/3/'
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Redirecting to 'http://swapi.dev/api/people/3/' via {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;0[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@327ad2fc
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Get connection for route {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Connection 0.0.0.0:62389&lt;-&gt;18.197.142.196:443 closed
+?[m?[1m[DEBUG][2020-10-20 21:20:54] Connecting to swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:20:55] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Attempt 3 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Sending request: GET /api/people/3/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &gt;&gt; &quot;GET /api/people/3/ HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &gt;&gt; &quot;Content-Type: application/xml; charset=ISO-8859-1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &gt;&gt; GET /api/people/3/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &gt;&gt; Content-Type: application/xml; charset=ISO-8859-1
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;HTTP/1.1 301 Moved Permanently[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:20:55 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;Content-Type: text/html[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;Content-Length: 169[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;Location: https://swapi.dev/api/people/3/[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Receiving response: HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &lt;&lt; HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &lt;&lt; Date: Tue, 20 Oct 2020 10:20:55 GMT
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &lt;&lt; Content-Type: text/html
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &lt;&lt; Content-Length: 169
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:20:55] &lt;&lt; Location: https://swapi.dev/api/people/3/
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Redirect requested to location 'https://swapi.dev/api/people/3/'
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Redirecting to 'https://swapi.dev/api/people/3/' via {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;&lt;html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;&lt;body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;&lt;hr&gt;&lt;center&gt;nginx/1.16.1&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;&lt;/body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55]  &lt;&lt; &quot;&lt;/html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@58a5db1d
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Get connection for route {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Connection 0.0.0.0:62391&lt;-&gt;18.197.142.196:80 closed
+?[m?[1m[DEBUG][2020-10-20 21:20:55] Connecting to swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:20:56] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:20:56] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:20:56] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:56] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:56] Attempt 4 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:20:56] Sending request: GET /api/people/3/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:56]  &gt;&gt; &quot;GET /api/people/3/ HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:56]  &gt;&gt; &quot;Content-Type: application/xml; charset=ISO-8859-1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:56]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:56]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:56]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:56]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:56]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:56]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:56] &gt;&gt; GET /api/people/3/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:56] &gt;&gt; Content-Type: application/xml; charset=ISO-8859-1
+?[m?[1m[DEBUG][2020-10-20 21:20:56] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:20:56] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:20:56] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:20:56] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:20:56] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:20:56 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Vary: Accept, Cookie[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;X-Frame-Options: SAMEORIGIN[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;ETag: &quot;ea2c6a2503bc72743781e28d84961e0d&quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Allow: GET, HEAD, OPTIONS[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Strict-Transport-Security: max-age=15768000[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Receiving response: HTTP/1.1 200 OK
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; HTTP/1.1 200 OK
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Date: Tue, 20 Oct 2020 10:20:56 GMT
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Content-Type: application/json
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Transfer-Encoding: chunked
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Vary: Accept, Cookie
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; X-Frame-Options: SAMEORIGIN
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; ETag: &quot;ea2c6a2503bc72743781e28d84961e0d&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Allow: GET, HEAD, OPTIONS
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Strict-Transport-Security: max-age=15768000
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Parsing response as: application/json
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;247[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;{&quot;name&quot;:&quot;R2-D2&quot;,&quot;height&quot;:&quot;96&quot;,&quot;mass&quot;:&quot;32&quot;,&quot;hair_color&quot;:&quot;n/a&quot;,&quot;skin_color&quot;:&quot;white, blue&quot;,&quot;eye_color&quot;:&quot;red&quot;,&quot;birth_year&quot;:&quot;33BBY&quot;,&quot;gender&quot;:&quot;n/a&quot;,&quot;homeworld&quot;:&quot;http://swapi.dev/api/planets/8/&quot;,&quot;films&quot;:[&quot;http://swapi.dev/api/films/1/&quot;,&quot;http://swapi.dev/api/films/2/&quot;,&quot;http://swapi.dev/api/films/3/&quot;,&quot;http://swapi.dev/api/films/4/&quot;,&quot;http://swapi.dev/api/films/5/&quot;,&quot;http://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[&quot;http://swapi.dev/api/species/2/&quot;],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:11:50.376000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.311000Z&quot;,&quot;url&quot;:&quot;http://swapi.dev/api/people/3/&quot;}&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;0[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@60fe9a5c
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Connection can be kept alive indefinitely
+?[mcheck3 {&quot;name&quot;:&quot;R2-D2&quot;,&quot;height&quot;:&quot;96&quot;,&quot;mass&quot;:&quot;32&quot;,&quot;hair_color&quot;:&quot;n/a&quot;,&quot;skin_color&quot;:&quot;white, blue&quot;,&quot;eye_color&quot;:&quot;red&quot;,&quot;birth_year&quot;:&quot;33BBY&quot;,&quot;gender&quot;:&quot;n/a&quot;,&quot;homeworld&quot;:&quot;http://swapi.dev/api/planets/8/&quot;,&quot;films&quot;:[&quot;http://swapi.dev/api/films/1/&quot;,&quot;http://swapi.dev/api/films/2/&quot;,&quot;http://swapi.dev/api/films/3/&quot;,&quot;http://swapi.dev/api/films/4/&quot;,&quot;http://swapi.dev/api/films/5/&quot;,&quot;http://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[&quot;http://swapi.dev/api/species/2/&quot;],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:11:50.376000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.311000Z&quot;,&quot;url&quot;:&quot;http://swapi.dev/api/people/3/&quot;}
+?[1m[DEBUG][2020-10-20 21:20:57] Get connection for route {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Connecting to swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:20:57] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Attempt 1 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Sending request: GET /api/people/3 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &gt;&gt; &quot;GET /api/people/3 HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &gt;&gt; &quot;Content-Type: application/xml; charset=ISO-8859-1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &gt;&gt; &quot;Content-Length: 0[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &gt;&gt; GET /api/people/3 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &gt;&gt; Content-Type: application/xml; charset=ISO-8859-1
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &gt;&gt; Content-Length: 0
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;HTTP/1.1 301 Moved Permanently[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:20:57 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Content-Type: text/html[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Content-Length: 169[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;Location: https://swapi.dev/api/people/3[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Receiving response: HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Date: Tue, 20 Oct 2020 10:20:57 GMT
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Content-Type: text/html
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Content-Length: 169
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:20:57] &lt;&lt; Location: https://swapi.dev/api/people/3
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Redirect requested to location 'https://swapi.dev/api/people/3'
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Redirecting to 'https://swapi.dev/api/people/3' via {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;&lt;html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;&lt;body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;&lt;hr&gt;&lt;center&gt;nginx/1.16.1&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;&lt;/body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57]  &lt;&lt; &quot;&lt;/html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@26c30d0
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Get connection for route {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Connection 0.0.0.0:62396&lt;-&gt;18.197.142.196:80 closed
+?[m?[1m[DEBUG][2020-10-20 21:20:57] Connecting to swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:20:58] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:20:58] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:20:58] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:58] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:58] Attempt 2 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:20:58] Sending request: GET /api/people/3 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:58]  &gt;&gt; &quot;GET /api/people/3 HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:58]  &gt;&gt; &quot;Content-Type: application/xml; charset=ISO-8859-1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:58]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:58]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:58]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:58]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:58]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:58]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:58] &gt;&gt; GET /api/people/3 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:58] &gt;&gt; Content-Type: application/xml; charset=ISO-8859-1
+?[m?[1m[DEBUG][2020-10-20 21:20:58] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:20:58] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:20:58] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:20:58] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:20:58] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;HTTP/1.1 301 MOVED PERMANENTLY[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:20:59 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Content-Type: text/html; charset=utf-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;X-Frame-Options: SAMEORIGIN[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;ETag: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Location: http://swapi.dev/api/people/3/[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Strict-Transport-Security: max-age=15768000[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Receiving response: HTTP/1.1 301 MOVED PERMANENTLY
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; HTTP/1.1 301 MOVED PERMANENTLY
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Date: Tue, 20 Oct 2020 10:20:59 GMT
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Content-Type: text/html; charset=utf-8
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Transfer-Encoding: chunked
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; X-Frame-Options: SAMEORIGIN
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; ETag: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Location: http://swapi.dev/api/people/3/
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Strict-Transport-Security: max-age=15768000
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Redirect requested to location 'http://swapi.dev/api/people/3/'
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Redirecting to 'http://swapi.dev/api/people/3/' via {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;0[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2b79a8b3
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Get connection for route {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Connection 0.0.0.0:62399&lt;-&gt;18.197.142.196:443 closed
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Connecting to swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:20:59] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Attempt 3 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Sending request: GET /api/people/3/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &gt;&gt; &quot;GET /api/people/3/ HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &gt;&gt; &quot;Content-Type: application/xml; charset=ISO-8859-1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &gt;&gt; GET /api/people/3/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &gt;&gt; Content-Type: application/xml; charset=ISO-8859-1
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;HTTP/1.1 301 Moved Permanently[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:20:59 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Content-Type: text/html[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Content-Length: 169[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;Location: https://swapi.dev/api/people/3/[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Receiving response: HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Date: Tue, 20 Oct 2020 10:20:59 GMT
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Content-Type: text/html
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Content-Length: 169
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:20:59] &lt;&lt; Location: https://swapi.dev/api/people/3/
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Redirect requested to location 'https://swapi.dev/api/people/3/'
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Redirecting to 'https://swapi.dev/api/people/3/' via {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;&lt;html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;&lt;body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;&lt;hr&gt;&lt;center&gt;nginx/1.16.1&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;&lt;/body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59]  &lt;&lt; &quot;&lt;/html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4633df3d
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Get connection for route {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Connection 0.0.0.0:62402&lt;-&gt;18.197.142.196:80 closed
+?[m?[1m[DEBUG][2020-10-20 21:20:59] Connecting to swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:01] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:21:01] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:21:01] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:01] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:01] Attempt 4 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:21:01] Sending request: GET /api/people/3/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &gt;&gt; &quot;GET /api/people/3/ HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &gt;&gt; &quot;Content-Type: application/xml; charset=ISO-8859-1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &gt;&gt; GET /api/people/3/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &gt;&gt; Content-Type: application/xml; charset=ISO-8859-1
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:21:01 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;Vary: Accept, Cookie[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;X-Frame-Options: SAMEORIGIN[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;ETag: &quot;ea2c6a2503bc72743781e28d84961e0d&quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;Allow: GET, HEAD, OPTIONS[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;Strict-Transport-Security: max-age=15768000[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01] Receiving response: HTTP/1.1 200 OK
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &lt;&lt; HTTP/1.1 200 OK
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &lt;&lt; Date: Tue, 20 Oct 2020 10:21:01 GMT
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &lt;&lt; Content-Type: application/json
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &lt;&lt; Transfer-Encoding: chunked
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &lt;&lt; Vary: Accept, Cookie
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &lt;&lt; X-Frame-Options: SAMEORIGIN
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &lt;&lt; ETag: &quot;ea2c6a2503bc72743781e28d84961e0d&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &lt;&lt; Allow: GET, HEAD, OPTIONS
+?[m?[1m[DEBUG][2020-10-20 21:21:01] &lt;&lt; Strict-Transport-Security: max-age=15768000
+?[m?[1m[DEBUG][2020-10-20 21:21:01] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:01] Parsing response as: application/json
+?[m?[1m[DEBUG][2020-10-20 21:21:01] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+?[m?[1m[DEBUG][2020-10-20 21:21:01] Connection 0.0.0.0:62392&lt;-&gt;18.197.142.196:443 closed
+?[m?[1;34m[INFO][2020-10-20 21:21:01] 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Validate the JSON Request for swapi planets 2
+-------------------------------------------------------------------(kay-tests;validate-the-json-request-for-swapi-planets-2)
+?[m?[1;34m[INFO][2020-10-20 21:21:02] adding tag to test fork:fork 2 scenario
+?[mJSON TEMPLATE - {&quot;event_type&quot;:&quot;AFP-ER100&quot;,&quot;event_reason&quot;:&quot;Added to Scan List&quot;,&quot;event_date_time&quot;:&quot;2020-01-24T07:11:06Z&quot;,&quot;data_entry_type&quot;:&quot;Scanned&quot;,&quot;article&quot;:{&quot;article_id&quot;:&quot;33JYD000765701000600809&quot;,&quot;full_barcode&quot;:&quot;33JYD000765701000600809&quot;,&quot;product&quot;:{&quot;sub_product_id&quot;:&quot;60&quot;,&quot;base_service_code&quot;:&quot;08&quot;,&quot;international_details&quot;:null},&quot;status&quot;:null},&quot;facility&quot;:{&quot;location&quot;:{&quot;work_centre_code&quot;:&quot;608278&quot;,&quot;location_name&quot;:null}},&quot;audit&quot;:{&quot;event_id&quot;:&quot;3d7834b1-2647-4388-9a22-7ad4b800eddf&quot;,&quot;event_source_name&quot;:&quot;MOBILESTAR&quot;},&quot;consignment&quot;:{&quot;consignment_id&quot;:&quot;33JYD0007657&quot;},&quot;device&quot;:{&quot;software_version&quot;:&quot;1.52.0.40702&quot;,&quot;serial_number&quot;:&quot;17216522511850&quot;,&quot;IMEI&quot;:&quot;353857080496165&quot;,&quot;device_id&quot;:&quot;a29ffb562e28b474&quot;,&quot;model&quot;:&quot;TC56&quot;,&quot;location&quot;:{&quot;geocode&quot;:{&quot;latitude&quot;:&quot;-37.81254&quot;,&quot;longitude&quot;:&quot;144.97006&quot;,&quot;heading&quot;:&quot;0.0&quot;,&quot;speed&quot;:&quot;0.0&quot;,&quot;height&quot;:&quot;0&quot;,&quot;geocode_date_time&quot;:&quot;2019-08-01T07:11:01Z&quot;}}},&quot;event_originator&quot;:{&quot;system&quot;:{&quot;sender_id&quot;:&quot;MOBILESTAR&quot;,&quot;sender_name&quot;:&quot;MOBILESTAR&quot;},&quot;person&quot;:{&quot;user_name&quot;:&quot;CONT1&quot;,&quot;user_role&quot;:&quot;CONT&quot;,&quot;person_id&quot;:&quot;25563&quot;,&quot;contract_number&quot;:&quot;W00337&quot;}},&quot;receiver&quot;:{&quot;contact_details&quot;:null,&quot;location&quot;:{&quot;address&quot;:null}},&quot;sender&quot;:null,&quot;transfer_to&quot;:{&quot;to_location&quot;:{&quot;location&quot;:null}},&quot;transportation&quot;:null,&quot;measurement&quot;:null,&quot;container&quot;:null,&quot;legacy&quot;:null,&quot;delivery&quot;:{&quot;requested_location&quot;:{&quot;location&quot;:{&quot;address&quot;:null}},&quot;proof_of_delivery&quot;:{&quot;service_actions&quot;:null},&quot;contract_number&quot;:&quot;W00337&quot;}}
+Modified JSON - {&quot;event_type&quot;:&quot;AFP-ER100&quot;,&quot;event_reason&quot;:&quot;Added to Scan List&quot;,&quot;event_date_time&quot;:&quot;2020-01-24T07:11:06Z&quot;,&quot;data_entry_type&quot;:&quot;Scanned&quot;,&quot;article&quot;:{&quot;article_id&quot;:&quot;33JYD000765701000600809&quot;,&quot;full_barcode&quot;:&quot;33JYD000765701000600809&quot;,&quot;product&quot;:{&quot;sub_product_id&quot;:&quot;60&quot;,&quot;base_service_code&quot;:&quot;08&quot;,&quot;international_details&quot;:null},&quot;status&quot;:null},&quot;facility&quot;:{&quot;location&quot;:{&quot;work_centre_code&quot;:&quot;608278&quot;,&quot;location_name&quot;:null}},&quot;audit&quot;:{&quot;event_id&quot;:&quot;3d7834b1-2647-4388-9a22-7ad4b800eddf&quot;,&quot;event_source_name&quot;:&quot;MOBILESTAR&quot;},&quot;consignment&quot;:{&quot;consignment_id&quot;:&quot;33JYD0007657&quot;},&quot;device&quot;:{&quot;software_version&quot;:&quot;1.52.0.40702&quot;,&quot;serial_number&quot;:&quot;17216522511850&quot;,&quot;IMEI&quot;:&quot;353857080496165&quot;,&quot;device_id&quot;:&quot;a29ffb562e28b474&quot;,&quot;model&quot;:&quot;TC56&quot;,&quot;location&quot;:{&quot;geocode&quot;:{&quot;latitude&quot;:&quot;-37.81254&quot;,&quot;longitude&quot;:&quot;144.97006&quot;,&quot;heading&quot;:&quot;0.0&quot;,&quot;speed&quot;:&quot;0.0&quot;,&quot;height&quot;:&quot;0&quot;,&quot;geocode_date_time&quot;:&quot;2019-08-01T07:11:01Z&quot;}}},&quot;event_originator&quot;:{&quot;system&quot;:{&quot;sender_id&quot;:&quot;MOBILESTAR&quot;,&quot;sender_name&quot;:&quot;MOBILESTAR&quot;},&quot;person&quot;:{&quot;user_name&quot;:&quot;CONT1&quot;,&quot;user_role&quot;:&quot;CONT&quot;,&quot;person_id&quot;:&quot;25563&quot;,&quot;contract_number&quot;:&quot;W00337&quot;}},&quot;receiver&quot;:{&quot;contact_details&quot;:null,&quot;location&quot;:{&quot;address&quot;:null}},&quot;sender&quot;:null,&quot;transfer_to&quot;:{&quot;to_location&quot;:{&quot;location&quot;:null}},&quot;transportation&quot;:null,&quot;measurement&quot;:null,&quot;container&quot;:null,&quot;legacy&quot;:null,&quot;delivery&quot;:{&quot;requested_location&quot;:{&quot;location&quot;:{&quot;address&quot;:null}},&quot;proof_of_delivery&quot;:{&quot;service_actions&quot;:null},&quot;contract_number&quot;:&quot;W00337&quot;},&quot;2&quot;:&quot;planets&quot;}
+JSON TEMPLATE - {&quot;event_type&quot;:&quot;AFP-ER100&quot;,&quot;event_reason&quot;:&quot;Added to Scan List&quot;,&quot;event_date_time&quot;:&quot;2020-01-24T07:11:06Z&quot;,&quot;data_entry_type&quot;:&quot;Scanned&quot;,&quot;article&quot;:{&quot;article_id&quot;:&quot;33JYD000765701000600809&quot;,&quot;full_barcode&quot;:&quot;33JYD000765701000600809&quot;,&quot;product&quot;:{&quot;sub_product_id&quot;:&quot;60&quot;,&quot;base_service_code&quot;:&quot;08&quot;,&quot;international_details&quot;:null},&quot;status&quot;:null},&quot;facility&quot;:{&quot;location&quot;:{&quot;work_centre_code&quot;:&quot;608278&quot;,&quot;location_name&quot;:null}},&quot;audit&quot;:{&quot;event_id&quot;:&quot;3d7834b1-2647-4388-9a22-7ad4b800eddf&quot;,&quot;event_source_name&quot;:&quot;MOBILESTAR&quot;},&quot;consignment&quot;:{&quot;consignment_id&quot;:&quot;33JYD0007657&quot;},&quot;device&quot;:{&quot;software_version&quot;:&quot;1.52.0.40702&quot;,&quot;serial_number&quot;:&quot;17216522511850&quot;,&quot;IMEI&quot;:&quot;353857080496165&quot;,&quot;device_id&quot;:&quot;a29ffb562e28b474&quot;,&quot;model&quot;:&quot;TC56&quot;,&quot;location&quot;:{&quot;geocode&quot;:{&quot;latitude&quot;:&quot;-37.81254&quot;,&quot;longitude&quot;:&quot;144.97006&quot;,&quot;heading&quot;:&quot;0.0&quot;,&quot;speed&quot;:&quot;0.0&quot;,&quot;height&quot;:&quot;0&quot;,&quot;geocode_date_time&quot;:&quot;2019-08-01T07:11:01Z&quot;}}},&quot;event_originator&quot;:{&quot;system&quot;:{&quot;sender_id&quot;:&quot;MOBILESTAR&quot;,&quot;sender_name&quot;:&quot;MOBILESTAR&quot;},&quot;person&quot;:{&quot;user_name&quot;:&quot;CONT1&quot;,&quot;user_role&quot;:&quot;CONT&quot;,&quot;person_id&quot;:&quot;25563&quot;,&quot;contract_number&quot;:&quot;W00337&quot;}},&quot;receiver&quot;:{&quot;contact_details&quot;:null,&quot;location&quot;:{&quot;address&quot;:null}},&quot;sender&quot;:null,&quot;transfer_to&quot;:{&quot;to_location&quot;:{&quot;location&quot;:null}},&quot;transportation&quot;:null,&quot;measurement&quot;:null,&quot;container&quot;:null,&quot;legacy&quot;:null,&quot;delivery&quot;:{&quot;requested_location&quot;:{&quot;location&quot;:{&quot;address&quot;:null}},&quot;proof_of_delivery&quot;:{&quot;service_actions&quot;:null},&quot;contract_number&quot;:&quot;W00337&quot;}}
+Modified JSON - {&quot;event_type&quot;:&quot;AFP-ER100&quot;,&quot;event_reason&quot;:&quot;Added to Scan List&quot;,&quot;event_date_time&quot;:&quot;2020-01-24T07:11:06Z&quot;,&quot;data_entry_type&quot;:&quot;Scanned&quot;,&quot;article&quot;:{&quot;article_id&quot;:&quot;33JYD000765701000600809&quot;,&quot;full_barcode&quot;:&quot;33JYD000765701000600809&quot;,&quot;product&quot;:{&quot;sub_product_id&quot;:&quot;60&quot;,&quot;base_service_code&quot;:&quot;08&quot;,&quot;international_details&quot;:null},&quot;status&quot;:null},&quot;facility&quot;:{&quot;location&quot;:{&quot;work_centre_code&quot;:&quot;608278&quot;,&quot;location_name&quot;:null}},&quot;audit&quot;:{&quot;event_id&quot;:&quot;3d7834b1-2647-4388-9a22-7ad4b800eddf&quot;,&quot;event_source_name&quot;:&quot;MOBILESTAR&quot;},&quot;consignment&quot;:{&quot;consignment_id&quot;:&quot;33JYD0007657&quot;},&quot;device&quot;:{&quot;software_version&quot;:&quot;1.52.0.40702&quot;,&quot;serial_number&quot;:&quot;17216522511850&quot;,&quot;IMEI&quot;:&quot;353857080496165&quot;,&quot;device_id&quot;:&quot;a29ffb562e28b474&quot;,&quot;model&quot;:&quot;TC56&quot;,&quot;location&quot;:{&quot;geocode&quot;:{&quot;latitude&quot;:&quot;-37.81254&quot;,&quot;longitude&quot;:&quot;144.97006&quot;,&quot;heading&quot;:&quot;0.0&quot;,&quot;speed&quot;:&quot;0.0&quot;,&quot;height&quot;:&quot;0&quot;,&quot;geocode_date_time&quot;:&quot;2019-08-01T07:11:01Z&quot;}}},&quot;event_originator&quot;:{&quot;system&quot;:{&quot;sender_id&quot;:&quot;MOBILESTAR&quot;,&quot;sender_name&quot;:&quot;MOBILESTAR&quot;},&quot;person&quot;:{&quot;user_name&quot;:&quot;CONT1&quot;,&quot;user_role&quot;:&quot;CONT&quot;,&quot;person_id&quot;:&quot;25563&quot;,&quot;contract_number&quot;:&quot;W00337&quot;}},&quot;receiver&quot;:{&quot;contact_details&quot;:null,&quot;location&quot;:{&quot;address&quot;:null}},&quot;sender&quot;:null,&quot;transfer_to&quot;:{&quot;to_location&quot;:{&quot;location&quot;:null}},&quot;transportation&quot;:null,&quot;measurement&quot;:null,&quot;container&quot;:null,&quot;legacy&quot;:null,&quot;delivery&quot;:{&quot;requested_location&quot;:{&quot;location&quot;:{&quot;address&quot;:null}},&quot;proof_of_delivery&quot;:{&quot;service_actions&quot;:null},&quot;contract_number&quot;:&quot;W00337&quot;},&quot;2&quot;:&quot;planets&quot;}
+check2 http://swapi.dev/api/planets/2
+?[1m[DEBUG][2020-10-20 21:21:03] Get connection for route {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:21:03] Connecting to swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:21:03] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:21:03] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:21:03] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:03] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:03] Attempt 1 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:21:03] Sending request: GET /api/planets/2 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:03]  &gt;&gt; &quot;GET /api/planets/2 HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:03]  &gt;&gt; &quot;Srcsysid: 12[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:03]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:03]  &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:03]  &gt;&gt; &quot;Content-Length: 1377[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:03]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:03]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:03]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:03]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:03]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:03] &gt;&gt; GET /api/planets/2 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:03] &gt;&gt; Srcsysid: 12
+?[m?[1m[DEBUG][2020-10-20 21:21:03] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:21:03] &gt;&gt; Content-Type: application/json; charset=UTF-8
+?[m?[1m[DEBUG][2020-10-20 21:21:03] &gt;&gt; Content-Length: 1377
+?[m?[1m[DEBUG][2020-10-20 21:21:03] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:21:03] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:21:03] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:21:03] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:21:03]  &gt;&gt; &quot;{&quot;event_type&quot;:&quot;AFP-ER100&quot;,&quot;event_reason&quot;:&quot;Added to Scan List&quot;,&quot;event_date_time&quot;:&quot;2020-01-24T07:11:06Z&quot;,&quot;data_entry_type&quot;:&quot;Scanned&quot;,&quot;article&quot;:{&quot;article_id&quot;:&quot;33JYD000765701000600809&quot;,&quot;full_barcode&quot;:&quot;33JYD000765701000600809&quot;,&quot;product&quot;:{&quot;sub_product_id&quot;:&quot;60&quot;,&quot;base_service_code&quot;:&quot;08&quot;,&quot;international_details&quot;:null},&quot;status&quot;:null},&quot;facility&quot;:{&quot;location&quot;:{&quot;work_centre_code&quot;:&quot;608278&quot;,&quot;location_name&quot;:null}},&quot;audit&quot;:{&quot;event_id&quot;:&quot;3d7834b1-2647-4388-9a22-7ad4b800eddf&quot;,&quot;event_source_name&quot;:&quot;MOBILESTAR&quot;},&quot;consignment&quot;:{&quot;consignment_id&quot;:&quot;33JYD0007657&quot;},&quot;device&quot;:{&quot;software_version&quot;:&quot;1.52.0.40702&quot;,&quot;serial_number&quot;:&quot;17216522511850&quot;,&quot;IMEI&quot;:&quot;353857080496165&quot;,&quot;device_id&quot;:&quot;a29ffb562e28b474&quot;,&quot;model&quot;:&quot;TC56&quot;,&quot;location&quot;:{&quot;geocode&quot;:{&quot;latitude&quot;:&quot;-37.81254&quot;,&quot;longitude&quot;:&quot;144.97006&quot;,&quot;heading&quot;:&quot;0.0&quot;,&quot;speed&quot;:&quot;0.0&quot;,&quot;height&quot;:&quot;0&quot;,&quot;geocode_date_time&quot;:&quot;2019-08-01T07:11:01Z&quot;}}},&quot;event_originator&quot;:{&quot;system&quot;:{&quot;sender_id&quot;:&quot;MOBILESTAR&quot;,&quot;sender_name&quot;:&quot;MOBILESTAR&quot;},&quot;person&quot;:{&quot;user_name&quot;:&quot;CONT1&quot;,&quot;user_role&quot;:&quot;CONT&quot;,&quot;person_id&quot;:&quot;25563&quot;,&quot;contract_number&quot;:&quot;W00337&quot;}},&quot;receiver&quot;:{&quot;contact_details&quot;:null,&quot;location&quot;:{&quot;address&quot;:null}},&quot;sender&quot;:null,&quot;transfer_to&quot;:{&quot;to_location&quot;:{&quot;location&quot;:null}},&quot;transportation&quot;:null,&quot;measurement&quot;:null,&quot;container&quot;:null,&quot;legacy&quot;:null,&quot;delivery&quot;:{&quot;requested_location&quot;:{&quot;location&quot;:{&quot;address&quot;:null}},&quot;proof_of_delivery&quot;:{&quot;service_actions&quot;:null},&quot;contract_number&quot;:&quot;W00337&quot;},&quot;2&quot;:&quot;planets&quot;}&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;HTTP/1.1 301 Moved Permanently[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:21:03 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;Content-Type: text/html[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;Content-Length: 169[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;Location: https://swapi.dev/api/planets/2[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04] Receiving response: HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:21:04] &lt;&lt; HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:21:04] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:21:04] &lt;&lt; Date: Tue, 20 Oct 2020 10:21:03 GMT
+?[m?[1m[DEBUG][2020-10-20 21:21:04] &lt;&lt; Content-Type: text/html
+?[m?[1m[DEBUG][2020-10-20 21:21:04] &lt;&lt; Content-Length: 169
+?[m?[1m[DEBUG][2020-10-20 21:21:04] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:21:04] &lt;&lt; Location: https://swapi.dev/api/planets/2
+?[m?[1m[DEBUG][2020-10-20 21:21:04] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:04] Redirect requested to location 'https://swapi.dev/api/planets/2'
+?[m?[1m[DEBUG][2020-10-20 21:21:04] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:21:04] Redirecting to 'https://swapi.dev/api/planets/2' via {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;&lt;html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;&lt;body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;&lt;hr&gt;&lt;center&gt;nginx/1.16.1&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;&lt;/body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04]  &lt;&lt; &quot;&lt;/html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:04] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@350e3700
+?[m?[1m[DEBUG][2020-10-20 21:21:04] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:04] Get connection for route {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:04] Connection 0.0.0.0:62406&lt;-&gt;18.197.142.196:80 closed
+?[m?[1m[DEBUG][2020-10-20 21:21:04] Connecting to swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:05] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Attempt 2 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Sending request: GET /api/planets/2 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;GET /api/planets/2 HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Srcsysid: 12[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; GET /api/planets/2 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Srcsysid: 12
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Content-Type: application/json; charset=UTF-8
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;HTTP/1.1 301 MOVED PERMANENTLY[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:21:05 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;Content-Type: text/html; charset=utf-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;X-Frame-Options: SAMEORIGIN[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;ETag: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;Location: http://swapi.dev/api/planets/2/[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;Strict-Transport-Security: max-age=15768000[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Receiving response: HTTP/1.1 301 MOVED PERMANENTLY
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &lt;&lt; HTTP/1.1 301 MOVED PERMANENTLY
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &lt;&lt; Date: Tue, 20 Oct 2020 10:21:05 GMT
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &lt;&lt; Content-Type: text/html; charset=utf-8
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &lt;&lt; Transfer-Encoding: chunked
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &lt;&lt; X-Frame-Options: SAMEORIGIN
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &lt;&lt; ETag: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &lt;&lt; Location: http://swapi.dev/api/planets/2/
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &lt;&lt; Strict-Transport-Security: max-age=15768000
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Redirect requested to location 'http://swapi.dev/api/planets/2/'
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Redirecting to 'http://swapi.dev/api/planets/2/' via {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;0[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@530652b0
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Get connection for route {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Connection 0.0.0.0:62407&lt;-&gt;18.197.142.196:443 closed
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Connecting to swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:21:05] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Attempt 3 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:21:05] Sending request: GET /api/planets/2/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;GET /api/planets/2/ HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Srcsysid: 12[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; GET /api/planets/2/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Srcsysid: 12
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Content-Type: application/json; charset=UTF-8
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:21:05] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;HTTP/1.1 301 Moved Permanently[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:21:05 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;Content-Type: text/html[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;Content-Length: 169[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;Location: https://swapi.dev/api/planets/2/[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06] Receiving response: HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:21:06] &lt;&lt; HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:21:06] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:21:06] &lt;&lt; Date: Tue, 20 Oct 2020 10:21:05 GMT
+?[m?[1m[DEBUG][2020-10-20 21:21:06] &lt;&lt; Content-Type: text/html
+?[m?[1m[DEBUG][2020-10-20 21:21:06] &lt;&lt; Content-Length: 169
+?[m?[1m[DEBUG][2020-10-20 21:21:06] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:21:06] &lt;&lt; Location: https://swapi.dev/api/planets/2/
+?[m?[1m[DEBUG][2020-10-20 21:21:06] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:06] Redirect requested to location 'https://swapi.dev/api/planets/2/'
+?[m?[1m[DEBUG][2020-10-20 21:21:06] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:21:06] Redirecting to 'https://swapi.dev/api/planets/2/' via {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;&lt;html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;&lt;body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;&lt;hr&gt;&lt;center&gt;nginx/1.16.1&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;&lt;/body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06]  &lt;&lt; &quot;&lt;/html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:06] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@623e5ead
+?[m?[1m[DEBUG][2020-10-20 21:21:06] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:06] Get connection for route {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:06] Connection 0.0.0.0:62412&lt;-&gt;18.197.142.196:80 closed
+?[m?[1m[DEBUG][2020-10-20 21:21:06] Connecting to swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:07] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Attempt 4 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Sending request: GET /api/planets/2/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &gt;&gt; &quot;GET /api/planets/2/ HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &gt;&gt; &quot;Srcsysid: 12[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &gt;&gt; GET /api/planets/2/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &gt;&gt; Srcsysid: 12
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &gt;&gt; Content-Type: application/json; charset=UTF-8
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:21:07 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;Vary: Accept, Cookie[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;X-Frame-Options: SAMEORIGIN[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;ETag: &quot;232e468fed344ec176abb7ab12c690f8&quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;Allow: GET, HEAD, OPTIONS[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;Strict-Transport-Security: max-age=15768000[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Receiving response: HTTP/1.1 200 OK
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &lt;&lt; HTTP/1.1 200 OK
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &lt;&lt; Date: Tue, 20 Oct 2020 10:21:07 GMT
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &lt;&lt; Content-Type: application/json
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &lt;&lt; Transfer-Encoding: chunked
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &lt;&lt; Vary: Accept, Cookie
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &lt;&lt; X-Frame-Options: SAMEORIGIN
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &lt;&lt; ETag: &quot;232e468fed344ec176abb7ab12c690f8&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &lt;&lt; Allow: GET, HEAD, OPTIONS
+?[m?[1m[DEBUG][2020-10-20 21:21:07] &lt;&lt; Strict-Transport-Security: max-age=15768000
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Parsing response as: application/json
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;206[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;{&quot;name&quot;:&quot;Alderaan&quot;,&quot;rotation_period&quot;:&quot;24&quot;,&quot;orbital_period&quot;:&quot;364&quot;,&quot;diameter&quot;:&quot;12500&quot;,&quot;climate&quot;:&quot;temperate&quot;,&quot;gravity&quot;:&quot;1 standard&quot;,&quot;terrain&quot;:&quot;grasslands, mountains&quot;,&quot;surface_water&quot;:&quot;40&quot;,&quot;population&quot;:&quot;2000000000&quot;,&quot;residents&quot;:[&quot;http://swapi.dev/api/people/5/&quot;,&quot;http://swapi.dev/api/people/68/&quot;,&quot;http://swapi.dev/api/people/81/&quot;],&quot;films&quot;:[&quot;http://swapi.dev/api/films/1/&quot;,&quot;http://swapi.dev/api/films/6/&quot;],&quot;created&quot;:&quot;2014-12-10T11:35:48.479000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T20:58:18.420000Z&quot;,&quot;url&quot;:&quot;http://swapi.dev/api/planets/2/&quot;}&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;0[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@372194a3
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Connection can be kept alive indefinitely
+?[mcheck3 {&quot;name&quot;:&quot;Alderaan&quot;,&quot;rotation_period&quot;:&quot;24&quot;,&quot;orbital_period&quot;:&quot;364&quot;,&quot;diameter&quot;:&quot;12500&quot;,&quot;climate&quot;:&quot;temperate&quot;,&quot;gravity&quot;:&quot;1 standard&quot;,&quot;terrain&quot;:&quot;grasslands, mountains&quot;,&quot;surface_water&quot;:&quot;40&quot;,&quot;population&quot;:&quot;2000000000&quot;,&quot;residents&quot;:[&quot;http://swapi.dev/api/people/5/&quot;,&quot;http://swapi.dev/api/people/68/&quot;,&quot;http://swapi.dev/api/people/81/&quot;],&quot;films&quot;:[&quot;http://swapi.dev/api/films/1/&quot;,&quot;http://swapi.dev/api/films/6/&quot;],&quot;created&quot;:&quot;2014-12-10T11:35:48.479000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T20:58:18.420000Z&quot;,&quot;url&quot;:&quot;http://swapi.dev/api/planets/2/&quot;}
+?[1m[DEBUG][2020-10-20 21:21:07] Get connection for route {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:21:07] Connecting to swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:21:08] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Attempt 1 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Sending request: GET /api/planets/2 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &gt;&gt; &quot;GET /api/planets/2 HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &gt;&gt; &quot;Srcsysid: 12[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &gt;&gt; &quot;Content-Length: 1377[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &gt;&gt; GET /api/planets/2 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &gt;&gt; Srcsysid: 12
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &gt;&gt; Content-Type: application/json; charset=UTF-8
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &gt;&gt; Content-Length: 1377
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &gt;&gt; &quot;{&quot;event_type&quot;:&quot;AFP-ER100&quot;,&quot;event_reason&quot;:&quot;Added to Scan List&quot;,&quot;event_date_time&quot;:&quot;2020-01-24T07:11:06Z&quot;,&quot;data_entry_type&quot;:&quot;Scanned&quot;,&quot;article&quot;:{&quot;article_id&quot;:&quot;33JYD000765701000600809&quot;,&quot;full_barcode&quot;:&quot;33JYD000765701000600809&quot;,&quot;product&quot;:{&quot;sub_product_id&quot;:&quot;60&quot;,&quot;base_service_code&quot;:&quot;08&quot;,&quot;international_details&quot;:null},&quot;status&quot;:null},&quot;facility&quot;:{&quot;location&quot;:{&quot;work_centre_code&quot;:&quot;608278&quot;,&quot;location_name&quot;:null}},&quot;audit&quot;:{&quot;event_id&quot;:&quot;3d7834b1-2647-4388-9a22-7ad4b800eddf&quot;,&quot;event_source_name&quot;:&quot;MOBILESTAR&quot;},&quot;consignment&quot;:{&quot;consignment_id&quot;:&quot;33JYD0007657&quot;},&quot;device&quot;:{&quot;software_version&quot;:&quot;1.52.0.40702&quot;,&quot;serial_number&quot;:&quot;17216522511850&quot;,&quot;IMEI&quot;:&quot;353857080496165&quot;,&quot;device_id&quot;:&quot;a29ffb562e28b474&quot;,&quot;model&quot;:&quot;TC56&quot;,&quot;location&quot;:{&quot;geocode&quot;:{&quot;latitude&quot;:&quot;-37.81254&quot;,&quot;longitude&quot;:&quot;144.97006&quot;,&quot;heading&quot;:&quot;0.0&quot;,&quot;speed&quot;:&quot;0.0&quot;,&quot;height&quot;:&quot;0&quot;,&quot;geocode_date_time&quot;:&quot;2019-08-01T07:11:01Z&quot;}}},&quot;event_originator&quot;:{&quot;system&quot;:{&quot;sender_id&quot;:&quot;MOBILESTAR&quot;,&quot;sender_name&quot;:&quot;MOBILESTAR&quot;},&quot;person&quot;:{&quot;user_name&quot;:&quot;CONT1&quot;,&quot;user_role&quot;:&quot;CONT&quot;,&quot;person_id&quot;:&quot;25563&quot;,&quot;contract_number&quot;:&quot;W00337&quot;}},&quot;receiver&quot;:{&quot;contact_details&quot;:null,&quot;location&quot;:{&quot;address&quot;:null}},&quot;sender&quot;:null,&quot;transfer_to&quot;:{&quot;to_location&quot;:{&quot;location&quot;:null}},&quot;transportation&quot;:null,&quot;measurement&quot;:null,&quot;container&quot;:null,&quot;legacy&quot;:null,&quot;delivery&quot;:{&quot;requested_location&quot;:{&quot;location&quot;:{&quot;address&quot;:null}},&quot;proof_of_delivery&quot;:{&quot;service_actions&quot;:null},&quot;contract_number&quot;:&quot;W00337&quot;},&quot;2&quot;:&quot;planets&quot;}&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;HTTP/1.1 301 Moved Permanently[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:21:08 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;Content-Type: text/html[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;Content-Length: 169[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;Location: https://swapi.dev/api/planets/2[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Receiving response: HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &lt;&lt; HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &lt;&lt; Date: Tue, 20 Oct 2020 10:21:08 GMT
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &lt;&lt; Content-Type: text/html
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &lt;&lt; Content-Length: 169
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:21:08] &lt;&lt; Location: https://swapi.dev/api/planets/2
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Redirect requested to location 'https://swapi.dev/api/planets/2'
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Redirecting to 'https://swapi.dev/api/planets/2' via {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;&lt;html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;&lt;body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;&lt;hr&gt;&lt;center&gt;nginx/1.16.1&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;&lt;/body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08]  &lt;&lt; &quot;&lt;/html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3ce0b254
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Get connection for route {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Connection 0.0.0.0:62418&lt;-&gt;18.197.142.196:80 closed
+?[m?[1m[DEBUG][2020-10-20 21:21:08] Connecting to swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:09] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:21:09] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:21:09] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:09] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:09] Attempt 2 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:21:09] Sending request: GET /api/planets/2 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:09]  &gt;&gt; &quot;GET /api/planets/2 HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:09]  &gt;&gt; &quot;Srcsysid: 12[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:09]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:09]  &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:09]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:09]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:09]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:09]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:09]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:09] &gt;&gt; GET /api/planets/2 HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:09] &gt;&gt; Srcsysid: 12
+?[m?[1m[DEBUG][2020-10-20 21:21:09] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:21:09] &gt;&gt; Content-Type: application/json; charset=UTF-8
+?[m?[1m[DEBUG][2020-10-20 21:21:09] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:21:09] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:21:09] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:21:09] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;HTTP/1.1 301 MOVED PERMANENTLY[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:21:09 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Content-Type: text/html; charset=utf-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;X-Frame-Options: SAMEORIGIN[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;ETag: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Location: http://swapi.dev/api/planets/2/[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Strict-Transport-Security: max-age=15768000[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Receiving response: HTTP/1.1 301 MOVED PERMANENTLY
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; HTTP/1.1 301 MOVED PERMANENTLY
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Date: Tue, 20 Oct 2020 10:21:09 GMT
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Content-Type: text/html; charset=utf-8
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Transfer-Encoding: chunked
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; X-Frame-Options: SAMEORIGIN
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; ETag: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Location: http://swapi.dev/api/planets/2/
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Strict-Transport-Security: max-age=15768000
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Redirect requested to location 'http://swapi.dev/api/planets/2/'
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Redirecting to 'http://swapi.dev/api/planets/2/' via {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;0[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1df0f9f9
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Get connection for route {}-&gt;http://swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Connection 0.0.0.0:62419&lt;-&gt;18.197.142.196:443 closed
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Connecting to swapi.dev:80
+?[m?[1m[DEBUG][2020-10-20 21:21:10] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Attempt 3 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Sending request: GET /api/planets/2/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &gt;&gt; &quot;GET /api/planets/2/ HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &gt;&gt; &quot;Srcsysid: 12[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &gt;&gt; GET /api/planets/2/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &gt;&gt; Srcsysid: 12
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &gt;&gt; Content-Type: application/json; charset=UTF-8
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;HTTP/1.1 301 Moved Permanently[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:21:10 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Content-Type: text/html[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Content-Length: 169[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;Location: https://swapi.dev/api/planets/2/[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Receiving response: HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; HTTP/1.1 301 Moved Permanently
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Date: Tue, 20 Oct 2020 10:21:10 GMT
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Content-Type: text/html
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Content-Length: 169
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:21:10] &lt;&lt; Location: https://swapi.dev/api/planets/2/
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Redirect requested to location 'https://swapi.dev/api/planets/2/'
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Resetting target auth state
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Redirecting to 'https://swapi.dev/api/planets/2/' via {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;&lt;html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;&lt;body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;&lt;hr&gt;&lt;center&gt;nginx/1.16.1&lt;/center&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;&lt;/body&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10]  &lt;&lt; &quot;&lt;/html&gt;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@31dcbed4
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Get connection for route {s}-&gt;https://swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Connection 0.0.0.0:62421&lt;-&gt;18.197.142.196:80 closed
+?[m?[1m[DEBUG][2020-10-20 21:21:10] Connecting to swapi.dev:443
+?[m?[1m[DEBUG][2020-10-20 21:21:11] CookieSpec selected: ignoreCookies
+?[m?[1m[DEBUG][2020-10-20 21:21:11] Auth cache not set in the context
+?[m?[1m[DEBUG][2020-10-20 21:21:11] Target auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:11] Proxy auth state: UNCHALLENGED
+?[m?[1m[DEBUG][2020-10-20 21:21:11] Attempt 4 to execute request
+?[m?[1m[DEBUG][2020-10-20 21:21:11] Sending request: GET /api/planets/2/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:11]  &gt;&gt; &quot;GET /api/planets/2/ HTTP/1.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:11]  &gt;&gt; &quot;Srcsysid: 12[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:11]  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:11]  &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:11]  &gt;&gt; &quot;Host: swapi.dev[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:11]  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:11]  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:11]  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:11]  &gt;&gt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:11] &gt;&gt; GET /api/planets/2/ HTTP/1.1
+?[m?[1m[DEBUG][2020-10-20 21:21:11] &gt;&gt; Srcsysid: 12
+?[m?[1m[DEBUG][2020-10-20 21:21:11] &gt;&gt; Accept: */*
+?[m?[1m[DEBUG][2020-10-20 21:21:11] &gt;&gt; Content-Type: application/json; charset=UTF-8
+?[m?[1m[DEBUG][2020-10-20 21:21:11] &gt;&gt; Host: swapi.dev
+?[m?[1m[DEBUG][2020-10-20 21:21:11] &gt;&gt; Connection: Keep-Alive
+?[m?[1m[DEBUG][2020-10-20 21:21:11] &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_261)
+?[m?[1m[DEBUG][2020-10-20 21:21:11] &gt;&gt; Accept-Encoding: gzip,deflate
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;Server: nginx/1.16.1[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;Date: Tue, 20 Oct 2020 10:21:12 GMT[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;Vary: Accept, Cookie[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;X-Frame-Options: SAMEORIGIN[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;ETag: &quot;232e468fed344ec176abb7ab12c690f8&quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;Allow: GET, HEAD, OPTIONS[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;Strict-Transport-Security: max-age=15768000[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12]  &lt;&lt; &quot;[\r][\n]&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12] Receiving response: HTTP/1.1 200 OK
+?[m?[1m[DEBUG][2020-10-20 21:21:12] &lt;&lt; HTTP/1.1 200 OK
+?[m?[1m[DEBUG][2020-10-20 21:21:12] &lt;&lt; Server: nginx/1.16.1
+?[m?[1m[DEBUG][2020-10-20 21:21:12] &lt;&lt; Date: Tue, 20 Oct 2020 10:21:12 GMT
+?[m?[1m[DEBUG][2020-10-20 21:21:12] &lt;&lt; Content-Type: application/json
+?[m?[1m[DEBUG][2020-10-20 21:21:12] &lt;&lt; Transfer-Encoding: chunked
+?[m?[1m[DEBUG][2020-10-20 21:21:12] &lt;&lt; Connection: keep-alive
+?[m?[1m[DEBUG][2020-10-20 21:21:12] &lt;&lt; Vary: Accept, Cookie
+?[m?[1m[DEBUG][2020-10-20 21:21:12] &lt;&lt; X-Frame-Options: SAMEORIGIN
+?[m?[1m[DEBUG][2020-10-20 21:21:12] &lt;&lt; ETag: &quot;232e468fed344ec176abb7ab12c690f8&quot;
+?[m?[1m[DEBUG][2020-10-20 21:21:12] &lt;&lt; Allow: GET, HEAD, OPTIONS
+?[m?[1m[DEBUG][2020-10-20 21:21:12] &lt;&lt; Strict-Transport-Security: max-age=15768000
+?[m?[1m[DEBUG][2020-10-20 21:21:12] Connection can be kept alive indefinitely
+?[m?[1m[DEBUG][2020-10-20 21:21:12] Parsing response as: application/json
+?[m?[1m[DEBUG][2020-10-20 21:21:12] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+?[m</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Oct 20, 2020 9:20:36 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 11063
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1603189240.529][WARNING]: This version of ChromeDriver has not been tested with Chrome version 86.
+Oct 20, 2020 9:20:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.5</a> at 20/10/2020 9:21:13 PM</p>
+</div>
+</div>
+</body>
+</html>

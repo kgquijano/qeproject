@@ -11,12 +11,12 @@ public class APISteps extends ScenarioSteps {
 
    private MessageFactory messageFactory;
 
-    public void authorizeRequest(String searchString,String modifyValue,String templateType,String templateIdValue) throws Exception {
-       messageFactory.authorizeRequest(searchString,modifyValue,templateType,templateIdValue);
+    public void authorizeRequest(String searchString,String modifyValue,String templateType) throws Exception {
+       messageFactory.authorizeRequest(searchString,modifyValue,templateType);
     }
 
     public void submitSOAPRequest(String searchString,String modifyValue,String templateType,String templateIdValue) throws Exception {
-        messageFactory.submitSOAPRequest( searchString, modifyValue, templateType, templateIdValue);
+        messageFactory.submitSOAPRequest( searchString, modifyValue, templateType);
     }
 
     public void submitRequest(String templateType) throws Exception {

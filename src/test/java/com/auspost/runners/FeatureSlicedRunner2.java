@@ -5,6 +5,6 @@ import cucumber.api.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberSerneityRunner2.class)
-@CucumberOptions(features = "classpath:features", glue = "com.auspost", tags = "@type=cts")
+@CucumberOptions(features = "classpath:features", glue = "com.auspost", tags = "@type=QEtest")
 public class FeatureSlicedRunner2 {
 }

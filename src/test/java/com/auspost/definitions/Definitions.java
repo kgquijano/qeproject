@@ -2,14 +2,12 @@ package com.auspost.definitions;
 
 import com.auspost.pages.FirstSuite;
 import com.auspost.pages.SecondSuite;
-import com.auspost.steps.APISteps;
-import com.auspost.steps.ElectronSteps;
-import com.auspost.steps.RevITSteps;
-import com.auspost.steps.SheldeSteps;
+import com.auspost.steps.*;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import net.serenitybdd.cucumber.suiteslicing.SerenityTags;
 import net.thucydides.core.annotations.Steps;
 
@@ -32,6 +30,9 @@ public class Definitions {
 
     @Steps
     ElectronSteps electronSteps;
+
+    @Steps
+    DuckDuckGoSteps duckDuckGoSteps;
 
     @Before
     public void before() {
@@ -90,6 +91,17 @@ public class Definitions {
         revITSteps.verifyRevITAboutPage();
     }
 
+    @io.cucumber.java.en.Given("Launch DuckDuckGo Page")
+    public void launchDuckDuckGoPage() {
+        duckDuckGoSteps.launchDuckDuckGoBrowserUI();
+    }
+
+    @When("I search for Revolution IT")
+    public void searchRevolutionIT() {duckDuckGoSteps.searchRevolutionIT();}
+
+    @Then("Search results is displayed")
+    public void verifyResults() {duckDuckGoSteps.verifyResults();}
+
     @io.cucumber.java.en.Given("Launch Shelde Page")
     public void launchSheldePage() {
         sheldeSteps.launchSheldeBrowserUI();
@@ -106,10 +118,10 @@ public class Definitions {
         sheldeSteps.verifySheldeServicePage();
     }
 
-
+/*
     @io.cucumber.java.en.Given("Validate the {string} request by changing the City {string} for the Object {string} with the ID {string}")
     public void validateTheRequestByChangingTheCityForTheObjectWithTheID(String arg0, String arg1, String arg2, String arg3) throws Exception {
-        apiSteps.authorizeRequest(arg2,arg1,arg0,arg3);
+        apiSteps.authorizeRequest(arg2,arg1,arg0);
     }
 
     @And("Submit the {string} request")
@@ -121,10 +133,11 @@ public class Definitions {
     public void responseIs(String arg0) {
         apiSteps.validateResponse(arg0);
     }
+*/
 
     @io.cucumber.java.en.Given("Validate the {string} request by changing the Product {string} for the Object {string}")
     public void validateTheRequestByChangingTheProductForTheObject(String arg0, String arg1, String arg2) throws Exception {
-        apiSteps.authorizeRequest(arg2,arg1,arg0,"");
+        apiSteps.authorizeRequest(arg2,arg1,arg0);
     }
 
     @And("Login with valid credentials")
@@ -133,6 +146,22 @@ public class Definitions {
         electronSteps.login();
         
     }
+
+    @io.cucumber.java.en.Given("Validate the {string} request by changing the Criteria {string} with value {string}")
+    public void validateSwapiplanet(String arg0, String arg1, String arg2) throws Exception {
+        apiSteps.authorizeRequest(arg2,arg1,arg0);
+    }
+
+    @And("Submit the {string} request")
+    public void submitTheRequestswapi(String arg0) throws Exception {
+        apiSteps.submitRequest(arg0);
+    }
+
+    @Then("response is {string}")
+    public void responseIsswapi(String arg0) {
+        apiSteps.validateResponse(arg0);
+    }
+
 
     @io.cucumber.java.en.Given("Launch post plus")
     public void launchPostPlus() throws Exception {

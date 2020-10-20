@@ -1,0 +1,60 @@
+com/auspost/steps/DuckDuckGoSteps.java
+ com.auspost.steps.DuckDuckGoSteps
+com/auspost/factory/ChromeDriverCapabilities.java
+ com.auspost.factory.ChromeDriverCapabilities
+com/auspost/customRunner/CucumberSerneityRunner2.java
+ com.auspost.customRunner.CucumberSerneityRunner2
+com/auspost/pages/DuckDuckGoPage.java
+ com.auspost.pages.DuckDuckGoPage
+com/auspost/steps/ElectronSteps.java
+ com.auspost.steps.ElectronSteps
+com/auspost/customRunner/SerenityCucumberForker.java
+ com.auspost.customRunner.SerenityCucumberForker
+com/auspost/pages/SheldePage.java
+ com.auspost.pages.SheldePage
+com/auspost/electronFactory/ChromeDriverBinary.java
+ com.auspost.electronFactory.ChromeDriverBinary
+com/auspost/runners/FeatureSlicedRunner1.java
+ com.auspost.runners.FeatureSlicedRunner1
+com/auspost/helpers/SAPGeneric.java
+ com.auspost.helpers.SAPGeneric
+com/auspost/helpers/SAPGuiClassName.java
+ com.auspost.helpers.SAPGuiClassName
+com/auspost/pages/SAPMainPage.java
+ com.auspost.pages.SAPMainPage
+com/auspost/pages/FirstSuite.java
+ com.auspost.pages.FirstSuite
+com/auspost/pages/RevITPage.java
+ com.auspost.pages.RevITPage
+com/auspost/messageObjects/MessageFactory.java
+ com.auspost.messageObjects.MessageFactory
+com/auspost/customRunner/CucumberSerneityRunner1.java
+ com.auspost.customRunner.CucumberSerneityRunner1
+com/auspost/helpers/SAPConnection.java
+ com.auspost.helpers.SAPConnection
+com/auspost/pages/ElectronPage.java
+ com.auspost.pages.ElectronPage
+com/auspost/runners/ShakeoutRunner.java
+ com.auspost.runners.ShakeoutRunner
+com/auspost/customRunner/AbstractCucumberSerenityRunner.java
+ com.auspost.customRunner.AbstractCucumberSerenityRunner
+com/auspost/definitions/Definitions.java
+ com.auspost.definitions.Definitions
+com/auspost/pages/SecondSuite.java
+ com.auspost.pages.SecondSuite
+com/auspost/factory/CustomWebDriverFactory.java
+ com.auspost.factory.CustomWebDriverFactory
+com/auspost/pages/SAPLoginPage.java
+ com.auspost.pages.SAPLoginPage
+com/auspost/steps/RevITSteps.java
+ com.auspost.steps.RevITSteps
+com/auspost/steps/SheldeSteps.java
+ com.auspost.steps.SheldeSteps
+com/auspost/messageObjects/MessageConstruct.java
+ com.auspost.messageObjects.MessageConstruct
+com/auspost/helpers/SAPCustomised.java
+ com.auspost.helpers.SAPCustomised
+com/auspost/steps/APISteps.java
+ com.auspost.steps.APISteps
+com/auspost/runners/FeatureSlicedRunner2.java
+ com.auspost.runners.FeatureSlicedRunner2
